@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamar Levi - Full Stack & AI Developer</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      background: radial-gradient(ellipse at center, #0f1e39 0%, #0c1527 100%);
+      color: white;
+      overflow-x: hidden;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    .banner {
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 20px;
+      max-width: 900px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+      position: relative;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #00e0ff;
+      box-shadow: 0 0 20px #00e0ff;
+      animation: floatProfile 4s ease-in-out infinite;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 1rem 0 0.5rem;
+      animation: typing 3s steps(20, end), blink-caret 0.75s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #00e0ff;
+      width: 18ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h2 {
+      font-weight: 300;
+      color: #00e0ff;
+      animation: fadeIn 2s ease forwards;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #ccc;
+      animation: fadeIn 2.5s ease forwards;
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .icons img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease;
+      animation: popUp 1s ease both;
+    }
+    .icons img:hover {
+      transform: scale(1.2) rotate(8deg);
+      filter: drop-shadow(0 0 10px #00e0ff);
+    }
+    a.button {
+      padding: 0.8rem 1.5rem;
+      background: linear-gradient(to right, #1f6feb, #8a2be2);
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 12px rgba(0,224,255,0.3);
+    }
+    a.button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0,224,255,0.5);
+    }
+    @keyframes floatProfile {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 18ch }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #00e0ff; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popUp {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="banner">
+      <img class="profile-img" src="https://raw.githubusercontent.com/tamar-levi/tamar-levi/main/A_digital_graphic_design_resume_banner_features_Ta.png" alt="Tamar Levi">
+      <h1>Tamar Levi</h1>
+      <h2>Full Stack & AI Developer</h2>
+      <p>Passionate about building full-stack solutions for clients while expanding my expertise in AI and machine learning.</p>
+      <div class="icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"/>
+      </div>
+      <a class="button" href="https://scrolls-website.vercel.app/" target="_blank">🌐 Visit My Portfolio</a>
+    </div>
+  </div>
+</body>
+</html>
